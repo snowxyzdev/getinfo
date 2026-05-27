@@ -13,11 +13,11 @@ function convert(time){
 }
 
 module.exports = async (req, res) => {
-  axios.get(`https://graph.facebook.com/v1.0/${req.query.uid}?fields=id,is_verified,cover,created_time,work,hometown,username,link,name,locale,location,about,website,birthday,gender,relationship_status,significant_other,quotes,first_name,subscribers.limit(0)&access_token=EAAD6V7os0gcBQZAmZAE5P4eN4ouaGOjKN4vJJnOV04ZCOU7CiaEHzcVZAitu22MMHB2ZCWAbnK0ZA76Lwlcjti8ovZBQ1y0TfHFedDzzwDOgMIXanRDuls8Glz82uGlmktjxbnSWe7B2I64wP4gCzJz1iYZAJLhUqcz7N4TNjEnVrxp08pGaTZCTxXazKkZC5EHM956AZDZD`,{
+  axios.get(`https://graph.facebook.com/v1.0/${req.query.uid}?fields=id,is_verified,cover,created_time,work,hometown,username,link,name,locale,location,about,website,birthday,gender,relationship_status,significant_other,quotes,first_name,subscribers.limit(0)&access_token=EAAGNO4a7r2wBRoVZCZAjE3ZBdxwHy4zOUMJ0sGZBvALTcegZBVnMq2gwIZCBQMqmAtQ6QzOXsQmaZAgH13ZAhDDrU8N2tzQm3MWZAmQIGZB6dGrPoyY8Ri8BYSuM6Hym2KGSUTc5UBx3pQ7aLUKfkgmyXiUqe9ZBt9KoSi9EMG7NRRdjp0WBVWxWSeyQ16TFDtKkMMp0gZDZD`,{
     headers: {
       "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like) Version/12.0 eWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1",
       "accept": "application/json, text/plain, */*",
-      "cookie": "xs=19%3AEqx5Bk2ezY4JeQ%3A2%3A1769807161%3A-1%3A-1; fbl_st=101421541%3BT%3A29661720; ps_l=1; fr=0KHMiWIIQhHsYE9vv.AWfvYzPaZFf7qT-TtA7sKbs0rM6P808lh6enhzJaHfd72BjArD4.BqFByF..AAA.0.0.BqFB24.AWfgzjgrVCTu9foGC6s3mspw5BU; c_user=100000233785625; datr=lcZ8abUD_S5MbC4a5X2q1UO0; locale=vi_VN; wl_cbv=v2%3Bclient_version%3A3170%3Btimestamp%3A1779703208; sb=lcZ8aUsxINrkKOyq4tRDNc8w; pas=61554498010746%3A5hRF6ikqP9%2C100000233785625%3AbBsO8Tl90p; vpd=v1%3B932x430x3; ps_n=1"
+      "cookie": "datr=9xQXanNuyd7S1_gXcmiPoUJC;sb=9xQXasKB8Hpr5bkpuW3eBx4s;c_user=61554809607268;ps_l=1;ps_n=1;xs=33%3AL8N7s8R5mhSE_g%3A2%3A1779897902%3A-1%3A-1%3A%3AAcysIgVU7de0CIN9ImX2P6ONRwGOv8msQ0ujqRi2Mg;fr=16GdWNzy9X6ieuj8f.AWf8rRBxo4LuLP8a6HJkAp94B5eQJMgEjzhSozZAR0tiMs0QGxQ.BqF3oD..AAA.0.0.BqF4KI.AWdwj-HcmJ2usw6yAe4Yivt_q8M;presence=C%7B%22lm3%22%3A%22u.100066238841683%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1779925681878%2C%22v%22%3A1%7D;wd=808x1420;"
     }
   }).then(resp => {
     var dj = {
