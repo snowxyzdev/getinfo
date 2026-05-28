@@ -1,4 +1,3 @@
-exports.name = '/facebook/getinfo';
 const axios = require('axios')
 function convert(time){
   var date = new Date(`${time}`);
